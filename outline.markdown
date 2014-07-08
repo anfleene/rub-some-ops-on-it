@@ -1,30 +1,35 @@
 Debugging
-  When debugging a running system it helps to think about the path
-through the system
-  If you can find the path through the system/app then you can fix it.
-  Good Monitoring/Logging can take over from there.
+  Track the code path  
+  .note When debugging a running system it helps to think about the path through the system
+  Reproduction
+  .note If you can find the path through the system/app then you can fix it.
+  .note Systems thinking(need more)
+  Good Monitoring & Logging 
 
-Risk Assessment
-  How Risky is this change?
-  How will your users be impacted by it?
-  What is the absolute worst thing that could happen?
-  What happens if 2 servers are serving different versions of this code?
-
-Risk Reduction
-  How Can you reduce this risk of this change?
-  Slow rollout with feature flags
-  Migrating data(column names)
+Risk Management
+  Assessment -  How Risky is this change?
+  .note How will your users be impacted by it?
+  .note What is the absolute worst thing that could happen?
+  .note What happens if 2 servers are serving different versions of this code?
+  Reduction - How Can you reduce this risk of this change?
+  .note Slow rollout with feature flags
+  .note Migrating data(column names)
   Small changes are safer
 
 Failure
-  How does this code handle failure?
-  Know your external dependencies.
-  Are they hard dependencies?
-  What happens if they go down?/Responding slowly
+  Understanding internal failure
+  .note what happens when this application fails
+  Understanding external failure
+  .note know your dependencies
+  .note What happens if they go down?
+  .note What happens if they are responding slowly
   Design for failure
+  .note Build in timeouts
+  .note Expect an api will fail
+  .note Write tests with a failing api
+  .note mission critical add fault tolerence(multiple email providers)
 
-Shared Goal
-  Contious Improvment - Over time lots of small changes can turn a clunker into a well oiled
-machine.
-  We all want the app to run smothly
+Contious Improvment
+  .notes Over time lots of small changes can turn a clunker into a well oiled machine.
+  .notes Everyone wants the app to run smothly
 
