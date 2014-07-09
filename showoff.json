@@ -1,5 +1,9 @@
 { "name": "Rub Some Ops On It",
   "sections": [
-                {"section": ""}
+                {"section": "opening"},
+                {"section": "debugging"},
+                {"section": "risk_management"},
+                {"section": "failure"},
+                {"section": "conclusion"}
               ]
 }
