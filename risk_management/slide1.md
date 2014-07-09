@@ -3,13 +3,11 @@
 .notes Understand Risk, this is super important, Ops will give you hugs or high fives
 
 !SLIDE center transition=uncover
-## Assessment
-## How Risky is this change?
+## How Risky is the change?
   .notes How will your users be impacted by it? What is the absolute worst thing that could happen? What happens if 2 servers are serving different versions of this code?
 
 !SLIDE center transition=uncover
-## Reduction
-## Can you reduce this risk of this change?
+## Can you reduce the risk?
 .notes Slow rollout with feature flags, Migrating data(column names)
 
 !SLIDE center transition=uncover
